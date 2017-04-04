@@ -8,9 +8,8 @@ import com.milek.drop.Drop;
 
 public class MainMenuScreen implements Screen {
 
-    final Drop game;
-
-    OrthographicCamera camera;
+    private final Drop game;
+    private OrthographicCamera camera;
 
     public MainMenuScreen(final Drop game){
         this.game = game;

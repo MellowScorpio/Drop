@@ -19,7 +19,7 @@ import java.util.Iterator;
 
 public class GameScreen implements Screen {
 
-    final Drop game;
+    private final Drop game;
 
     private final int SPRITE_SIZE = 64;
     private final int BUCKET_SPEED = 250;
@@ -67,7 +67,7 @@ public class GameScreen implements Screen {
         bucket.height = SPRITE_SIZE;
 
         //create raindrops array and spawn first one
-        raindrops = new Array<Rectangle>();
+        raindrops = new Array<>();
         spawnRaindrop();
 
         touchPos = new Vector3();
